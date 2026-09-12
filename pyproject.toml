@@ -1,0 +1,22 @@
+[project]
+name = "lecture-02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "aziziashabir", email = "113279601+shabirazizi1@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asteval>=1.0.9",
+]
+
+[project.scripts]
+lecture-02 = "lecture_02:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
