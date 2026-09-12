@@ -23,6 +23,8 @@ jobs:
         run: uv python install
 
       - name: Run Pytest
+        env:
+          PYTHONPATH: .
         run: |
           uv sync
           uv run pytest
